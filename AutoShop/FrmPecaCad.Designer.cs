@@ -33,12 +33,12 @@
             button1 = new Button();
             btnSalvar = new Button();
             gbCadastro = new GroupBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            richTextBox1 = new RichTextBox();
-            pesquisa = new Label();
-            label1 = new Label();
             label2 = new Label();
+            label1 = new Label();
+            pesquisa = new Label();
+            richTextBox1 = new RichTextBox();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
             panel1.SuspendLayout();
             gbCadastro.SuspendLayout();
             SuspendLayout();
@@ -97,37 +97,15 @@
             gbCadastro.TabStop = false;
             gbCadastro.Text = "gbCadastro";
             // 
-            // textBox1
+            // label2
             // 
-            textBox1.Location = new Point(231, 88);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(349, 31);
-            textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(231, 385);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(349, 31);
-            textBox2.TabIndex = 1;
-            // 
-            // richTextBox1
-            // 
-            richTextBox1.Location = new Point(231, 171);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(349, 144);
-            richTextBox1.TabIndex = 2;
-            richTextBox1.Text = "";
-            // 
-            // pesquisa
-            // 
-            pesquisa.AutoSize = true;
-            pesquisa.Font = new Font("Segoe UI", 12F);
-            pesquisa.Location = new Point(76, 85);
-            pesquisa.Name = "pesquisa";
-            pesquisa.Size = new Size(118, 32);
-            pesquisa.TabIndex = 3;
-            pesquisa.Text = "Pesquisar:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F);
+            label2.Location = new Point(76, 382);
+            label2.Name = "label2";
+            label2.Size = new Size(118, 32);
+            label2.TabIndex = 5;
+            label2.Text = "Pesquisar:";
             // 
             // label1
             // 
@@ -139,15 +117,37 @@
             label1.TabIndex = 4;
             label1.Text = "Pesquisar:";
             // 
-            // label2
+            // pesquisa
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(76, 382);
-            label2.Name = "label2";
-            label2.Size = new Size(118, 32);
-            label2.TabIndex = 5;
-            label2.Text = "Pesquisar:";
+            pesquisa.AutoSize = true;
+            pesquisa.Font = new Font("Segoe UI", 12F);
+            pesquisa.Location = new Point(76, 85);
+            pesquisa.Name = "pesquisa";
+            pesquisa.Size = new Size(118, 32);
+            pesquisa.TabIndex = 3;
+            pesquisa.Text = "Pesquisar:";
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.Location = new Point(231, 171);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(402, 144);
+            richTextBox1.TabIndex = 2;
+            richTextBox1.Text = "";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(231, 385);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(349, 31);
+            textBox2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(231, 88);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(349, 31);
+            textBox1.TabIndex = 0;
             // 
             // FrmPecaCad
             // 
