@@ -1,14 +1,14 @@
 ﻿namespace AutoShop
 {
-    partial class FrmPeca
+    partial class FrmVendas
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,142 +23,142 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
+            button1 = new Button();
+            btnSalvar = new Button();
             gbCadastro = new GroupBox();
             btnAdicionar = new Button();
             listaPecas = new DataGridView();
-            btnSalvar = new Button();
-            button1 = new Button();
-            panel1 = new Panel();
-            Fechar = new Button();
-            pesquisa = new Label();
+            button2 = new Button();
             textBox1 = new TextBox();
+            pesquisa = new Label();
+            Fechar = new Button();
             gbCadastro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)listaPecas).BeginInit();
-            panel1.SuspendLayout();
             SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Brown;
+            button1.Location = new Point(655, 617);
+            button1.Name = "button1";
+            button1.Size = new Size(112, 34);
+            button1.TabIndex = 10;
+            button1.Text = "Delete";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // btnSalvar
+            // 
+            btnSalvar.BackColor = Color.SpringGreen;
+            btnSalvar.Location = new Point(922, 617);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(112, 34);
+            btnSalvar.TabIndex = 9;
+            btnSalvar.Text = "Edite";
+            btnSalvar.UseVisualStyleBackColor = false;
             // 
             // gbCadastro
             // 
             gbCadastro.Controls.Add(btnAdicionar);
             gbCadastro.Controls.Add(listaPecas);
-            gbCadastro.Location = new Point(12, 89);
+            gbCadastro.Location = new Point(36, 94);
             gbCadastro.Name = "gbCadastro";
-            gbCadastro.Size = new Size(1073, 517);
-            gbCadastro.TabIndex = 0;
+            gbCadastro.Size = new Size(1038, 517);
+            gbCadastro.TabIndex = 8;
             gbCadastro.TabStop = false;
             gbCadastro.Text = "gbCadastro";
             // 
             // btnAdicionar
             // 
-            btnAdicionar.BackColor = Color.SpringGreen;
-            btnAdicionar.Location = new Point(165, 11);
+            btnAdicionar.BackColor = Color.MediumTurquoise;
+            btnAdicionar.Location = new Point(126, 11);
             btnAdicionar.Name = "btnAdicionar";
-            btnAdicionar.Size = new Size(112, 34);
+            btnAdicionar.Size = new Size(193, 34);
             btnAdicionar.TabIndex = 3;
-            btnAdicionar.Text = "Add Part";
+            btnAdicionar.Text = "New work Orde";
             btnAdicionar.UseVisualStyleBackColor = false;
             // 
             // listaPecas
             // 
             listaPecas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            listaPecas.Location = new Point(46, 51);
+            listaPecas.Location = new Point(27, 51);
             listaPecas.Name = "listaPecas";
             listaPecas.RowHeadersWidth = 62;
             listaPecas.Size = new Size(973, 439);
             listaPecas.TabIndex = 0;
             // 
-            // btnSalvar
+            // button2
             // 
-            btnSalvar.BackColor = Color.SpringGreen;
-            btnSalvar.Location = new Point(919, 617);
-            btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(112, 34);
-            btnSalvar.TabIndex = 1;
-            btnSalvar.Text = "Save";
-            btnSalvar.UseVisualStyleBackColor = false;
+            button2.BackColor = Color.DodgerBlue;
+            button2.Location = new Point(784, 617);
+            button2.Name = "button2";
+            button2.Size = new Size(112, 34);
+            button2.TabIndex = 11;
+            button2.Text = "Finish";
+            button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // textBox1
             // 
-            button1.BackColor = Color.Brown;
-            button1.Location = new Point(790, 617);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 2;
-            button1.Text = "Delete";
-            button1.UseVisualStyleBackColor = false;
+            textBox1.Location = new Point(266, 35);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(699, 31);
+            textBox1.TabIndex = 0;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
-            // panel1
+            // pesquisa
             // 
-            panel1.BackColor = Color.RoyalBlue;
-            panel1.Controls.Add(Fechar);
-            panel1.Controls.Add(pesquisa);
-            panel1.Controls.Add(textBox1);
-            panel1.Location = new Point(12, 12);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1073, 71);
-            panel1.TabIndex = 3;
+            pesquisa.AutoSize = true;
+            pesquisa.Font = new Font("Segoe UI", 12F);
+            pesquisa.Location = new Point(155, 35);
+            pesquisa.Name = "pesquisa";
+            pesquisa.Size = new Size(90, 32);
+            pesquisa.TabIndex = 1;
+            pesquisa.Text = "Search:";
             // 
             // Fechar
             // 
             Fechar.BackColor = Color.Red;
-            Fechar.Location = new Point(1022, 16);
+            Fechar.Location = new Point(1036, 20);
             Fechar.Name = "Fechar";
             Fechar.Size = new Size(38, 34);
             Fechar.TabIndex = 4;
             Fechar.Text = "X";
             Fechar.UseVisualStyleBackColor = false;
             // 
-            // pesquisa
-            // 
-            pesquisa.AutoSize = true;
-            pesquisa.Font = new Font("Segoe UI", 12F);
-            pesquisa.Location = new Point(62, 18);
-            pesquisa.Name = "pesquisa";
-            pesquisa.Size = new Size(90, 32);
-            pesquisa.TabIndex = 1;
-            pesquisa.Text = "Search:";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(206, 21);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(722, 31);
-            textBox1.TabIndex = 0;
-            // 
-            // FrmPeca
+            // FrmVendas
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1104, 663);
-            Controls.Add(panel1);
+            Controls.Add(Fechar);
+            Controls.Add(button2);
             Controls.Add(button1);
+            Controls.Add(textBox1);
             Controls.Add(btnSalvar);
+            Controls.Add(pesquisa);
             Controls.Add(gbCadastro);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "FrmPeca";
-            Text = "FrmPeca";
+            Name = "FrmVendas";
+            Text = "FrmVendas";
             gbCadastro.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)listaPecas).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
+        private Button button1;
+        private Button btnSalvar;
         private GroupBox gbCadastro;
         private Button btnAdicionar;
         private DataGridView listaPecas;
-        private Button btnSalvar;
-        private Button button1;
-        private Panel panel1;
+        private Button button2;
+        private Label pesquisa;
         private TextBox textBox1;
         private Button Fechar;
-        private Label pesquisa;
     }
 }
