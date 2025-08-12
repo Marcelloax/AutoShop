@@ -113,6 +113,7 @@
             gbCadastro.TabIndex = 4;
             gbCadastro.TabStop = false;
             gbCadastro.Text = "Cliente";
+            gbCadastro.Enter += gbCadastro_Enter;
             // 
             // btnAdicionar
             // 
