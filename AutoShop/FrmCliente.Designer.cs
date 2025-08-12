@@ -79,6 +79,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(722, 31);
             textBox1.TabIndex = 0;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // button1
             // 
@@ -89,6 +90,7 @@
             button1.TabIndex = 6;
             button1.Text = "Delete";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // btnSalvar
             // 
@@ -97,8 +99,9 @@
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(112, 34);
             btnSalvar.TabIndex = 5;
-            btnSalvar.Text = "Save";
+            btnSalvar.Text = "Edit";
             btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // gbCadastro
             // 
@@ -109,7 +112,7 @@
             gbCadastro.Size = new Size(1073, 517);
             gbCadastro.TabIndex = 4;
             gbCadastro.TabStop = false;
-            gbCadastro.Text = "gbCadastro";
+            gbCadastro.Text = "Cliente";
             // 
             // btnAdicionar
             // 
@@ -120,6 +123,7 @@
             btnAdicionar.TabIndex = 3;
             btnAdicionar.Text = "New User";
             btnAdicionar.UseVisualStyleBackColor = false;
+            btnAdicionar.Click += btnAdicionar_Click;
             // 
             // listaPecas
             // 
