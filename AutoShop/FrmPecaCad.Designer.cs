@@ -33,12 +33,12 @@
             button1 = new Button();
             btnSalvar = new Button();
             gbCadastro = new GroupBox();
-            comboBox1 = new ComboBox();
+            txtStock = new TextBox();
             label2 = new Label();
             label1 = new Label();
             pesquisa = new Label();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtPrice = new TextBox();
+            txtNome = new TextBox();
             panel1.SuspendLayout();
             gbCadastro.SuspendLayout();
             SuspendLayout();
@@ -61,6 +61,7 @@
             Fechar.TabIndex = 4;
             Fechar.Text = "X";
             Fechar.UseVisualStyleBackColor = false;
+            Fechar.Click += Fechar_Click;
             // 
             // button1
             // 
@@ -69,8 +70,9 @@
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
             button1.TabIndex = 6;
-            button1.Text = "Delete";
+            button1.Text = "Close";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // btnSalvar
             // 
@@ -81,15 +83,16 @@
             btnSalvar.TabIndex = 5;
             btnSalvar.Text = "Save";
             btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click_1;
             // 
             // gbCadastro
             // 
-            gbCadastro.Controls.Add(comboBox1);
+            gbCadastro.Controls.Add(txtStock);
             gbCadastro.Controls.Add(label2);
             gbCadastro.Controls.Add(label1);
             gbCadastro.Controls.Add(pesquisa);
-            gbCadastro.Controls.Add(textBox2);
-            gbCadastro.Controls.Add(textBox1);
+            gbCadastro.Controls.Add(txtPrice);
+            gbCadastro.Controls.Add(txtNome);
             gbCadastro.Location = new Point(57, 118);
             gbCadastro.Name = "gbCadastro";
             gbCadastro.Size = new Size(1073, 495);
@@ -97,13 +100,12 @@
             gbCadastro.TabStop = false;
             gbCadastro.Text = "gbCadastro";
             // 
-            // comboBox1
+            // txtStock
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(231, 326);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(182, 33);
-            comboBox1.TabIndex = 6;
+            txtStock.Location = new Point(231, 326);
+            txtStock.Name = "txtStock";
+            txtStock.Size = new Size(349, 31);
+            txtStock.TabIndex = 6;
             // 
             // label2
             // 
@@ -135,19 +137,19 @@
             pesquisa.TabIndex = 3;
             pesquisa.Text = "Name:";
             // 
-            // textBox2
+            // txtPrice
             // 
-            textBox2.Location = new Point(231, 215);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(349, 31);
-            textBox2.TabIndex = 1;
+            txtPrice.Location = new Point(231, 215);
+            txtPrice.Name = "txtPrice";
+            txtPrice.Size = new Size(349, 31);
+            txtPrice.TabIndex = 1;
             // 
-            // textBox1
+            // txtNome
             // 
-            textBox1.Location = new Point(231, 88);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(349, 31);
-            textBox1.TabIndex = 0;
+            txtNome.Location = new Point(231, 88);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(349, 31);
+            txtNome.TabIndex = 0;
             // 
             // FrmPecaCad
             // 
@@ -174,11 +176,11 @@
         private Button button1;
         private Button btnSalvar;
         private GroupBox gbCadastro;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtPrice;
+        private TextBox txtNome;
         private Label label2;
         private Label label1;
         private Label pesquisa;
-        private ComboBox comboBox1;
+        private TextBox txtStock;
     }
 }

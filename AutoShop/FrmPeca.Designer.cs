@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            gbCadastro = new GroupBox();
+            Pecas = new GroupBox();
             btnAdicionar = new Button();
             listaPecas = new DataGridView();
             btnSalvar = new Button();
@@ -36,22 +36,22 @@
             panel1 = new Panel();
             Fechar = new Button();
             pesquisa = new Label();
-            textBox1 = new TextBox();
-            gbCadastro.SuspendLayout();
+            txtPesquisa = new TextBox();
+            Pecas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)listaPecas).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // gbCadastro
+            // Pecas
             // 
-            gbCadastro.Controls.Add(btnAdicionar);
-            gbCadastro.Controls.Add(listaPecas);
-            gbCadastro.Location = new Point(12, 89);
-            gbCadastro.Name = "gbCadastro";
-            gbCadastro.Size = new Size(1073, 517);
-            gbCadastro.TabIndex = 0;
-            gbCadastro.TabStop = false;
-            gbCadastro.Text = "gbCadastro";
+            Pecas.Controls.Add(btnAdicionar);
+            Pecas.Controls.Add(listaPecas);
+            Pecas.Location = new Point(12, 89);
+            Pecas.Name = "Pecas";
+            Pecas.Size = new Size(1073, 517);
+            Pecas.TabIndex = 0;
+            Pecas.TabStop = false;
+            Pecas.Text = "Pecas";
             // 
             // btnAdicionar
             // 
@@ -62,6 +62,7 @@
             btnAdicionar.TabIndex = 3;
             btnAdicionar.Text = "Add Part";
             btnAdicionar.UseVisualStyleBackColor = false;
+            btnAdicionar.Click += btnAdicionar_Click;
             // 
             // listaPecas
             // 
@@ -71,6 +72,7 @@
             listaPecas.RowHeadersWidth = 62;
             listaPecas.Size = new Size(973, 439);
             listaPecas.TabIndex = 0;
+            listaPecas.CellContentClick += listaPecas_CellContentClick;
             // 
             // btnSalvar
             // 
@@ -79,8 +81,9 @@
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(112, 34);
             btnSalvar.TabIndex = 1;
-            btnSalvar.Text = "Save";
+            btnSalvar.Text = "Edit";
             btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // button1
             // 
@@ -91,13 +94,14 @@
             button1.TabIndex = 2;
             button1.Text = "Delete";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // panel1
             // 
             panel1.BackColor = Color.RoyalBlue;
             panel1.Controls.Add(Fechar);
             panel1.Controls.Add(pesquisa);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(txtPesquisa);
             panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(1073, 71);
@@ -112,6 +116,7 @@
             Fechar.TabIndex = 4;
             Fechar.Text = "X";
             Fechar.UseVisualStyleBackColor = false;
+            Fechar.Click += Fechar_Click;
             // 
             // pesquisa
             // 
@@ -123,12 +128,13 @@
             pesquisa.TabIndex = 1;
             pesquisa.Text = "Search:";
             // 
-            // textBox1
+            // txtPesquisa
             // 
-            textBox1.Location = new Point(206, 21);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(722, 31);
-            textBox1.TabIndex = 0;
+            txtPesquisa.Location = new Point(206, 21);
+            txtPesquisa.Name = "txtPesquisa";
+            txtPesquisa.Size = new Size(722, 31);
+            txtPesquisa.TabIndex = 0;
+            txtPesquisa.TextChanged += txtPesquisa_TextChanged;
             // 
             // FrmPeca
             // 
@@ -138,11 +144,12 @@
             Controls.Add(panel1);
             Controls.Add(button1);
             Controls.Add(btnSalvar);
-            Controls.Add(gbCadastro);
+            Controls.Add(Pecas);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmPeca";
             Text = "FrmPeca";
-            gbCadastro.ResumeLayout(false);
+            Activated += FrmPeca_Activated;
+            Pecas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)listaPecas).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -151,13 +158,13 @@
 
         #endregion
 
-        private GroupBox gbCadastro;
+        private GroupBox Pecas;
         private Button btnAdicionar;
         private DataGridView listaPecas;
         private Button btnSalvar;
         private Button button1;
         private Panel panel1;
-        private TextBox textBox1;
+        private TextBox txtPesquisa;
         private Button Fechar;
         private Label pesquisa;
     }
