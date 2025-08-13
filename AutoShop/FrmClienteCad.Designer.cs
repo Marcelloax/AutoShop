@@ -72,6 +72,7 @@
             Fechar.TabIndex = 4;
             Fechar.Text = "X";
             Fechar.UseVisualStyleBackColor = false;
+            Fechar.Click += Fechar_Click;
             // 
             // button1
             // 

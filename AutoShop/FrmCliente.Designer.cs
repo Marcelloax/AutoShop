@@ -62,6 +62,7 @@
             Fechar.TabIndex = 4;
             Fechar.Text = "X";
             Fechar.UseVisualStyleBackColor = false;
+            Fechar.Click += Fechar_Click;
             // 
             // pesquisa
             // 
@@ -129,11 +130,12 @@
             // listaPecas
             // 
             listaPecas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            listaPecas.Location = new Point(27, 51);
+            listaPecas.Location = new Point(34, 51);
             listaPecas.Name = "listaPecas";
             listaPecas.RowHeadersWidth = 62;
             listaPecas.Size = new Size(973, 439);
             listaPecas.TabIndex = 0;
+            listaPecas.CellClick += listaPecas_CellClick;
             // 
             // FrmCliente
             // 

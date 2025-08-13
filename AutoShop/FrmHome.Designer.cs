@@ -128,6 +128,7 @@
             button2.TabIndex = 18;
             button2.Text = "X";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 

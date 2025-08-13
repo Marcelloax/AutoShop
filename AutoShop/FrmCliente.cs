@@ -38,7 +38,7 @@ namespace AutoShop
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            new FrmPecaCad().ShowDialog();
+            new FrmClienteCad().ShowDialog();
             BuscarCliente();
         }
 
@@ -78,7 +78,8 @@ namespace AutoShop
 
         }
 
-        private void listaPecas_CellClick(object sender, DataGridViewCellEventArgs e) {
+        private void listaPecas_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
             using (var bd = new AutoshopDbContext())
             {
                 if (e.RowIndex >= 0 && e.RowIndex < listaPecas.Rows.Count)
@@ -86,10 +87,13 @@ namespace AutoShop
                     var id = Convert.ToInt32(listaPecas.Rows[e.RowIndex].Cells[0].Value);
                     clienteSelect = bd.Clientes.Find(id);
                 }
-            } }
+            }
+        }
         private void Fechar_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+        
     }
-    }
+}
