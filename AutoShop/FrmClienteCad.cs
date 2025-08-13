@@ -87,5 +87,10 @@ namespace AutoShop
         {
             Close();
         }
+
+        private void Fechar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

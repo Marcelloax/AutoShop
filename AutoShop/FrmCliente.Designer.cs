@@ -62,6 +62,7 @@
             Fechar.TabIndex = 4;
             Fechar.Text = "X";
             Fechar.UseVisualStyleBackColor = false;
+            Fechar.Click += Fechar_Click;
             // 
             // pesquisa
             // 
@@ -136,6 +137,7 @@
             listaPecas.RowHeadersWidth = 62;
             listaPecas.Size = new Size(973, 428);
             listaPecas.TabIndex = 0;
+            listaPecas.CellClick += listaPecas_CellClick;
             // 
             // FrmCliente
             // 

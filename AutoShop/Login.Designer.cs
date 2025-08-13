@@ -29,32 +29,31 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtusername = new TextBox();
+            txtpassword = new TextBox();
             LoginBtn = new Button();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            btnClose = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // txtusername
             // 
-            textBox1.BackColor = SystemColors.InactiveCaption;
-            textBox1.Location = new Point(402, 199);
-            textBox1.Margin = new Padding(0);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(218, 31);
-            textBox1.TabIndex = 0;
+            txtusername.BackColor = SystemColors.InactiveCaption;
+            txtusername.Location = new Point(402, 199);
+            txtusername.Margin = new Padding(0);
+            txtusername.Name = "txtusername";
+            txtusername.Size = new Size(218, 31);
+            txtusername.TabIndex = 0;
             // 
-            // textBox2
+            // txtpassword
             // 
-            textBox2.BackColor = SystemColors.InactiveCaption;
-            textBox2.Location = new Point(402, 312);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(218, 31);
-            textBox2.TabIndex = 1;
+            txtpassword.BackColor = SystemColors.InactiveCaption;
+            txtpassword.Location = new Point(402, 312);
+            txtpassword.Name = "txtpassword";
+            txtpassword.Size = new Size(218, 31);
+            txtpassword.TabIndex = 1;
             // 
             // LoginBtn
             // 
@@ -98,26 +97,16 @@
             label3.TextAlign = ContentAlignment.MiddleCenter;
             label3.Click += label3_Click;
             // 
-            // button1
+            // btnClose
             // 
-            button1.BackColor = SystemColors.GradientActiveCaption;
-            button1.Location = new Point(809, 488);
-            button1.Name = "button1";
-            button1.Size = new Size(167, 51);
-            button1.TabIndex = 6;
-            button1.Text = "New User";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += Btnnewuser;
-            // 
-            // button2
-            // 
-            button2.BackColor = SystemColors.GradientActiveCaption;
-            button2.Location = new Point(12, 488);
-            button2.Name = "button2";
-            button2.Size = new Size(167, 51);
-            button2.TabIndex = 7;
-            button2.Text = "Forgot password?";
-            button2.UseVisualStyleBackColor = false;
+            btnClose.BackColor = SystemColors.GradientActiveCaption;
+            btnClose.Location = new Point(928, 12);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(48, 40);
+            btnClose.TabIndex = 6;
+            btnClose.Text = "X";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += BtnClose;
             // 
             // Login
             // 
@@ -125,14 +114,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(988, 551);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnClose);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(LoginBtn);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtpassword);
+            Controls.Add(txtusername);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Login";
             Text = "Login";
@@ -143,13 +131,12 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtusername;
+        private TextBox txtpassword;
         private Button LoginBtn;
         private Label label1;
         private Label label2;
         private Label label3;
-        private Button button1;
-        private Button button2;
+        private Button btnClose;
     }
 }

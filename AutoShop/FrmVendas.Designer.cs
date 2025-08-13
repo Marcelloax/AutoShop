@@ -34,7 +34,6 @@
             gbCadastro = new GroupBox();
             btnAdicionar = new Button();
             listaPecas = new DataGridView();
-            button2 = new Button();
             textBox1 = new TextBox();
             pesquisa = new Label();
             Fechar = new Button();
@@ -45,12 +44,13 @@
             // button1
             // 
             button1.BackColor = Color.Brown;
-            button1.Location = new Point(655, 617);
+            button1.Location = new Point(791, 617);
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
             button1.TabIndex = 10;
             button1.Text = "Delete";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // btnSalvar
             // 
@@ -61,6 +61,7 @@
             btnSalvar.TabIndex = 9;
             btnSalvar.Text = "Edit";
             btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // gbCadastro
             // 
@@ -74,7 +75,7 @@
             gbCadastro.Size = new Size(1104, 577);
             gbCadastro.TabIndex = 8;
             gbCadastro.TabStop = false;
-            gbCadastro.Text = "gbCadastro";
+            gbCadastro.Text = "Sells";
             // 
             // btnAdicionar
             // 
@@ -85,6 +86,7 @@
             btnAdicionar.TabIndex = 3;
             btnAdicionar.Text = "New work Order";
             btnAdicionar.UseVisualStyleBackColor = false;
+            btnAdicionar.Click += btnAdicionar_Click;
             // 
             // listaPecas
             // 
@@ -94,8 +96,7 @@
             listaPecas.RowHeadersWidth = 62;
             listaPecas.Size = new Size(973, 439);
             listaPecas.TabIndex = 0;
-            // 
-            // button2
+            listaPecas.CellContentClick += listaPecas_CellContentClick;
             // 
             button2.BackColor = Color.DodgerBlue;
             button2.Location = new Point(945, 521);
@@ -132,6 +133,7 @@
             Fechar.TabIndex = 4;
             Fechar.Text = "X";
             Fechar.UseVisualStyleBackColor = false;
+            Fechar.Click += Fechar_Click;
             // 
             // FrmVendas
             // 
@@ -159,7 +161,6 @@
         private GroupBox gbCadastro;
         private Button btnAdicionar;
         private DataGridView listaPecas;
-        private Button button2;
         private Label pesquisa;
         private TextBox textBox1;
         private Button Fechar;

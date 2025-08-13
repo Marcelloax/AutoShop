@@ -15,6 +15,7 @@ namespace AutoShop
         public Login()
         {
             InitializeComponent();
+            
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -29,12 +30,25 @@ namespace AutoShop
 
         private void Btnlogin(object sender, EventArgs e)
         {
-
+            bool loginSuccess = ValidateLogin(txtusername.Text, txtpassword.Text);
+            if (loginSuccess)
+            {
+                this.Hide();
+                var login = new FrmHome(txtusername.Text, txtpassword.Text);
+                login.ShowDialog();
+            }
         }
 
-        private void Btnnewuser(object sender, EventArgs e)
+        private bool ValidateLogin(string text1, string text2)
         {
+            // Dummy validation logic for demonstration purposes
+            return text1 == "Legends" && text2 == "123";
+        }
 
+        private void BtnClose(object sender, EventArgs e)
+        {
+            Close();
+            Application.Exit();
         }
     }
 }
