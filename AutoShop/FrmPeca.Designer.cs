@@ -28,51 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Pecas = new GroupBox();
-            btnAdicionar = new Button();
-            listaPecas = new DataGridView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPeca));
             btnSalvar = new Button();
             button1 = new Button();
             panel1 = new Panel();
             Fechar = new Button();
             pesquisa = new Label();
             txtPesquisa = new TextBox();
-            Pecas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)listaPecas).BeginInit();
+            listaPecas = new DataGridView();
+            btnAdicionar = new Button();
+            Pecas = new GroupBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)listaPecas).BeginInit();
+            Pecas.SuspendLayout();
             SuspendLayout();
-            // 
-            // Pecas
-            // 
-            Pecas.Controls.Add(btnAdicionar);
-            Pecas.Controls.Add(listaPecas);
-            Pecas.Location = new Point(12, 89);
-            Pecas.Name = "Pecas";
-            Pecas.Size = new Size(1073, 517);
-            Pecas.TabIndex = 0;
-            Pecas.TabStop = false;
-            Pecas.Text = "Pecas";
-            // 
-            // btnAdicionar
-            // 
-            btnAdicionar.BackColor = Color.SpringGreen;
-            btnAdicionar.Location = new Point(165, 11);
-            btnAdicionar.Name = "btnAdicionar";
-            btnAdicionar.Size = new Size(112, 34);
-            btnAdicionar.TabIndex = 3;
-            btnAdicionar.Text = "Add Part";
-            btnAdicionar.UseVisualStyleBackColor = false;
-            btnAdicionar.Click += btnAdicionar_Click;
-            // 
-            // listaPecas
-            // 
-            listaPecas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            listaPecas.Location = new Point(46, 51);
-            listaPecas.Name = "listaPecas";
-            listaPecas.RowHeadersWidth = 62;
-            listaPecas.Size = new Size(973, 439);
-            listaPecas.TabIndex = 0;
-            listaPecas.CellContentClick += listaPecas_CellContentClick;
             // 
             // btnSalvar
             // 
@@ -99,18 +68,19 @@
             // panel1
             // 
             panel1.BackColor = Color.RoyalBlue;
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.Controls.Add(Fechar);
             panel1.Controls.Add(pesquisa);
             panel1.Controls.Add(txtPesquisa);
-            panel1.Location = new Point(12, 12);
+            panel1.Location = new Point(-1, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1073, 71);
+            panel1.Size = new Size(1086, 71);
             panel1.TabIndex = 3;
             // 
             // Fechar
             // 
             Fechar.BackColor = Color.Red;
-            Fechar.Location = new Point(1022, 16);
+            Fechar.Location = new Point(1045, 0);
             Fechar.Name = "Fechar";
             Fechar.Size = new Size(38, 34);
             Fechar.TabIndex = 4;
@@ -121,26 +91,63 @@
             // pesquisa
             // 
             pesquisa.AutoSize = true;
-            pesquisa.Font = new Font("Segoe UI", 12F);
-            pesquisa.Location = new Point(62, 18);
+            pesquisa.BackColor = Color.Transparent;
+            pesquisa.Font = new Font("Vladimir Script", 20F);
+            pesquisa.Location = new Point(46, 9);
             pesquisa.Name = "pesquisa";
-            pesquisa.Size = new Size(90, 32);
+            pesquisa.Size = new Size(118, 48);
             pesquisa.TabIndex = 1;
             pesquisa.Text = "Search:";
             // 
             // txtPesquisa
             // 
-            txtPesquisa.Location = new Point(206, 21);
+            txtPesquisa.BackColor = SystemColors.InactiveCaption;
+            txtPesquisa.BorderStyle = BorderStyle.None;
+            txtPesquisa.Location = new Point(191, 25);
             txtPesquisa.Name = "txtPesquisa";
-            txtPesquisa.Size = new Size(722, 31);
+            txtPesquisa.Size = new Size(722, 24);
             txtPesquisa.TabIndex = 0;
             txtPesquisa.TextChanged += txtPesquisa_TextChanged;
+            // 
+            // listaPecas
+            // 
+            listaPecas.BackgroundColor = SystemColors.ButtonShadow;
+            listaPecas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            listaPecas.Location = new Point(46, 51);
+            listaPecas.Name = "listaPecas";
+            listaPecas.RowHeadersWidth = 62;
+            listaPecas.Size = new Size(973, 439);
+            listaPecas.TabIndex = 0;
+            listaPecas.CellContentClick += listaPecas_CellContentClick;
+            // 
+            // btnAdicionar
+            // 
+            btnAdicionar.BackColor = Color.SpringGreen;
+            btnAdicionar.Location = new Point(165, 11);
+            btnAdicionar.Name = "btnAdicionar";
+            btnAdicionar.Size = new Size(112, 34);
+            btnAdicionar.TabIndex = 3;
+            btnAdicionar.Text = "Add Part";
+            btnAdicionar.UseVisualStyleBackColor = false;
+            btnAdicionar.Click += btnAdicionar_Click;
+            // 
+            // Pecas
+            // 
+            Pecas.BackgroundImage = (Image)resources.GetObject("Pecas.BackgroundImage");
+            Pecas.Controls.Add(btnAdicionar);
+            Pecas.Controls.Add(listaPecas);
+            Pecas.Location = new Point(-1, 60);
+            Pecas.Name = "Pecas";
+            Pecas.Size = new Size(1086, 605);
+            Pecas.TabIndex = 0;
+            Pecas.TabStop = false;
+            Pecas.Text = "Pecas";
             // 
             // FrmPeca
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1104, 663);
+            ClientSize = new Size(1087, 663);
             Controls.Add(panel1);
             Controls.Add(button1);
             Controls.Add(btnSalvar);
@@ -149,23 +156,22 @@
             Name = "FrmPeca";
             Text = "FrmPeca";
             Activated += FrmPeca_Activated;
-            Pecas.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)listaPecas).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)listaPecas).EndInit();
+            Pecas.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
-
-        private GroupBox Pecas;
-        private Button btnAdicionar;
-        private DataGridView listaPecas;
         private Button btnSalvar;
         private Button button1;
         private Panel panel1;
         private TextBox txtPesquisa;
         private Button Fechar;
         private Label pesquisa;
+        private DataGridView listaPecas;
+        private Button btnAdicionar;
+        private GroupBox Pecas;
     }
 }

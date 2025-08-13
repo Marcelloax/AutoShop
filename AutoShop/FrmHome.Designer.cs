@@ -33,7 +33,6 @@
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
             btnworkorders = new Button();
             textBox5 = new TextBox();
             button2 = new Button();
@@ -44,6 +43,7 @@
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -90,16 +90,6 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(-1, 201);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(755, 418);
-            pictureBox2.TabIndex = 13;
-            pictureBox2.TabStop = false;
-            // 
             // btnworkorders
             // 
             btnworkorders.BackColor = SystemColors.GradientActiveCaption;
@@ -122,7 +112,7 @@
             // button2
             // 
             button2.BackColor = SystemColors.GradientActiveCaption;
-            button2.Location = new Point(1042, 0);
+            button2.Location = new Point(1041, 1);
             button2.Name = "button2";
             button2.Size = new Size(55, 51);
             button2.TabIndex = 18;
@@ -156,7 +146,7 @@
             btncostumers.Name = "btncostumers";
             btncostumers.Size = new Size(334, 94);
             btncostumers.TabIndex = 21;
-            btncostumers.Text = "Costumers";
+            btncostumers.Text = "Customers";
             btncostumers.UseVisualStyleBackColor = false;
             btncostumers.Click += Btncustomers;
             // 
@@ -196,11 +186,22 @@
             textBox3.Size = new Size(218, 31);
             textBox3.TabIndex = 25;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox2.Location = new Point(-1, 206);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(755, 413);
+            pictureBox2.TabIndex = 13;
+            pictureBox2.TabStop = false;
+            // 
             // FrmHome
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1098, 618);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
@@ -233,7 +234,6 @@
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
         private Button btnworkorders;
         private TextBox textBox5;
         private Button button2;
@@ -244,5 +244,6 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;
+        private PictureBox pictureBox2;
     }
 }
