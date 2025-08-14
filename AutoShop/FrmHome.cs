@@ -52,7 +52,8 @@ namespace AutoShop
 
         private void Btnworkorder(object sender, EventArgs e)
         {
-
+            var workOrder = new FrmVendas();
+            workOrder.ShowDialog();
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)

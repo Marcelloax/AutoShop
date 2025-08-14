@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.IdentityModel.Tokens;
 
 namespace AutoShop
 {
@@ -31,10 +32,31 @@ namespace AutoShop
 
             }
         }
+
         public FrmVendasCad(Venda venda)
         {
-            
+            InitializeComponent();
+            using (var bd = new AutoshopDbContext())
+            {
+                var itens = bd.Pecas.ToList();
+                var Clientes = bd.Clientes.ToList();
+                cbxpart.DataSource = itens;
+                cbxpart.DisplayMember = "Nome";
+                cbxpart.ValueMember = "Id";
+                cbxclient.DataSource = Clientes;
+                cbxclient.DisplayMember = "Name";
+                cbxclient.ValueMember = "Id";
+                if (venda != null)
+                {
+                    cbxclient.SelectedValue = venda.ClienteId;
+                    cbxpart.SelectedValue = venda.PecaId;
+                    txtquant.Text = venda.Quantidade.ToString();
+                }
+            }
+
+
         }
+
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -71,18 +93,31 @@ namespace AutoShop
         {
             using (var bd = new AutoshopDbContext())
             {
-                string ClienteId = cbxclient.ToString();
-                string PecaId = cbxpart.ToString();
+                string? ClienteId = cbxclient.SelectedValue?.ToString();
+                if (ClienteId.IsNullOrEmpty())
+                {
+                    MessageBox.Show("Selecione um cliente.");
+                    return;
+                }
+                string? PecaId = cbxpart.SelectedValue?.ToString();
+                if (PecaId.IsNullOrEmpty())
+                {
+                    MessageBox.Show("Selecione uma peça.");
+                    return;
+                }
+                string Quantidade = txtquant.Text;
                 var venda = new Venda
                 {
-                    ClienteId = int.Parse(ClienteId),
-                    PecaId = int.Parse(PecaId),
-                    Quantidade = int.Parse(txtquant.Text)
+                    ClienteId = !ClienteId.IsNullOrEmpty() ? int.Parse(ClienteId!) : 0,
+                    PecaId = !PecaId.IsNullOrEmpty() ? int.Parse(PecaId) : 0,
+                    Data = DateTime.Now,
+                    Quantidade = int.Parse(Quantidade)
                 };
                 bd.Vendas.Add(venda);
                 bd.SaveChanges();
             }
             MessageBox.Show("Venda inserida com sucesso!");
+            this.Close();
 
         }
         private void AtualizarVenda()
@@ -97,7 +132,8 @@ namespace AutoShop
                 bd.Vendas.Update(vvenda);
                 bd.SaveChanges();
             }
-            MessageBox.Show("Venda atualizada com sucesso!");
+            MessageBox.Show("Venda atualizada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
         }
     }
 }

@@ -17,6 +17,10 @@ namespace AutoShop
         {
             InitializeComponent();
         }
+        private void FrmVendas_Load(object sender, EventArgs e)
+        {
+           BuscarVenda();
+        }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -26,6 +30,7 @@ namespace AutoShop
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
             new FrmVendasCad().ShowDialog();
+            BuscarVenda();
         }
 
         private void Fechar_Click(object sender, EventArgs e)
@@ -35,7 +40,7 @@ namespace AutoShop
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (vvenda == null)
+            if (vvenda != null)
             {
                 using (var bd = new AutoshopDbContext())
                 {
@@ -56,8 +61,19 @@ namespace AutoShop
                 {
                     vendas = vendas.Where(v => v.Cliente.Name.Contains(textBox1.Text));
                 }
-                listaPecas.DataSource = vendas.ToList();
-            }
+
+                listaPecas.DataSource = vendas.Select((e) =>
+                    new
+                    {
+                        Id = e.Id,
+                        Cliente = e.Cliente.Name,
+                        Telefone = e.Cliente.Phone,
+                        Data = e.Data.ToString("dd/MM/yyyy"),
+                        Quantidade = e.Quantidade
+                    }    
+                ).ToList();
+
+             }
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -73,10 +89,13 @@ namespace AutoShop
 
         private void listaPecas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            using (var bd = new AutoshopDbContext())
             {
-                vvenda = listaPecas.Rows[e.RowIndex].DataBoundItem as Venda;
-                btnSalvar.Enabled = true;
+                if (e.RowIndex >= 0 && e.RowIndex < listaPecas.Rows.Count)
+                {
+                    var id = Convert.ToInt32(listaPecas.Rows[e.RowIndex].Cells[0].Value);
+                    vvenda = bd.Vendas.Find(id);
+                }
             }
         }
     }

@@ -55,6 +55,7 @@
             // 
             btnSalvar.BackColor = Color.SpringGreen;
             btnSalvar.Location = new Point(922, 617);
+            btnSalvar.Margin = new Padding(4);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(112, 34);
             btnSalvar.TabIndex = 9;
@@ -92,7 +93,8 @@
             listaPecas.RowHeadersWidth = 62;
             listaPecas.Size = new Size(973, 439);
             listaPecas.TabIndex = 0;
-            listaPecas.CellContentClick += listaPecas_CellContentClick;
+            listaPecas.CellClick += listaPecas_CellContentClick;
+            
             // 
             // textBox1
             // 
@@ -137,6 +139,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmVendas";
             Text = "FrmVendas";
+            Load += FrmVendas_Load;
             gbCadastro.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)listaPecas).EndInit();
             ResumeLayout(false);
