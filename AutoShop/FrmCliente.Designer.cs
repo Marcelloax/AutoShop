@@ -44,21 +44,21 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.RoyalBlue;
+            panel1.BackColor = Color.LightSteelBlue;
             panel1.Controls.Add(Fechar);
             panel1.Controls.Add(pesquisa);
             panel1.Controls.Add(textBox1);
-            panel1.Location = new Point(17, 3);
+            panel1.Location = new Point(-1, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1073, 71);
+            panel1.Size = new Size(1105, 74);
             panel1.TabIndex = 7;
             // 
             // Fechar
             // 
-            Fechar.BackColor = Color.Red;
+            Fechar.BackColor = Color.DarkRed;
             Fechar.Location = new Point(1022, 16);
             Fechar.Name = "Fechar";
-            Fechar.Size = new Size(38, 34);
+            Fechar.Size = new Size(71, 34);
             Fechar.TabIndex = 4;
             Fechar.Text = "X";
             Fechar.UseVisualStyleBackColor = false;
@@ -67,10 +67,10 @@
             // pesquisa
             // 
             pesquisa.AutoSize = true;
-            pesquisa.Font = new Font("Segoe UI", 12F);
-            pesquisa.Location = new Point(62, 18);
+            pesquisa.Font = new Font("Vladimir Script", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            pesquisa.Location = new Point(56, 9);
             pesquisa.Name = "pesquisa";
-            pesquisa.Size = new Size(90, 32);
+            pesquisa.Size = new Size(118, 48);
             pesquisa.TabIndex = 1;
             pesquisa.Text = "Search:";
             // 
@@ -106,6 +106,7 @@
             // 
             // gbCadastro
             // 
+            gbCadastro.BackColor = SystemColors.ActiveCaption;
             gbCadastro.Controls.Add(btnAdicionar);
             gbCadastro.Controls.Add(listaPecas);
             gbCadastro.Location = new Point(19, 85);
@@ -113,27 +114,28 @@
             gbCadastro.Size = new Size(1073, 517);
             gbCadastro.TabIndex = 4;
             gbCadastro.TabStop = false;
-            gbCadastro.Text = "Cliente";
+            gbCadastro.Text = "Customer";
             gbCadastro.Enter += gbCadastro_Enter;
             // 
             // btnAdicionar
             // 
             btnAdicionar.BackColor = Color.SpringGreen;
-            btnAdicionar.Location = new Point(165, 11);
+            btnAdicionar.Location = new Point(86, 22);
             btnAdicionar.Name = "btnAdicionar";
-            btnAdicionar.Size = new Size(112, 34);
+            btnAdicionar.Size = new Size(192, 34);
             btnAdicionar.TabIndex = 3;
-            btnAdicionar.Text = "New User";
+            btnAdicionar.Text = "Add New Customer";
             btnAdicionar.UseVisualStyleBackColor = false;
             btnAdicionar.Click += btnAdicionar_Click;
             // 
             // listaPecas
             // 
+            listaPecas.BackgroundColor = SystemColors.GradientInactiveCaption;
             listaPecas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            listaPecas.Location = new Point(34, 51);
+            listaPecas.Location = new Point(27, 62);
             listaPecas.Name = "listaPecas";
             listaPecas.RowHeadersWidth = 62;
-            listaPecas.Size = new Size(973, 439);
+            listaPecas.Size = new Size(973, 428);
             listaPecas.TabIndex = 0;
             listaPecas.CellClick += listaPecas_CellClick;
             // 
@@ -141,6 +143,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.InactiveCaption;
             ClientSize = new Size(1104, 663);
             Controls.Add(panel1);
             Controls.Add(button1);

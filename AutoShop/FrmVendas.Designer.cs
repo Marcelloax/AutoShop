@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVendas));
             button1 = new Button();
             btnSalvar = new Button();
             gbCadastro = new GroupBox();
@@ -54,22 +55,24 @@
             // btnSalvar
             // 
             btnSalvar.BackColor = Color.SpringGreen;
-            btnSalvar.Location = new Point(922, 617);
-            btnSalvar.Margin = new Padding(4);
+            btnSalvar.Location = new Point(802, 521);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(112, 34);
             btnSalvar.TabIndex = 9;
-            btnSalvar.Text = "Edite";
+            btnSalvar.Text = "Edit";
             btnSalvar.UseVisualStyleBackColor = false;
             btnSalvar.Click += btnSalvar_Click;
             // 
             // gbCadastro
             // 
+            gbCadastro.BackgroundImage = (Image)resources.GetObject("gbCadastro.BackgroundImage");
             gbCadastro.Controls.Add(btnAdicionar);
+            gbCadastro.Controls.Add(button2);
             gbCadastro.Controls.Add(listaPecas);
-            gbCadastro.Location = new Point(36, 94);
+            gbCadastro.Controls.Add(btnSalvar);
+            gbCadastro.Location = new Point(2, 96);
             gbCadastro.Name = "gbCadastro";
-            gbCadastro.Size = new Size(1038, 517);
+            gbCadastro.Size = new Size(1104, 577);
             gbCadastro.TabIndex = 8;
             gbCadastro.TabStop = false;
             gbCadastro.Text = "Sells";
@@ -77,11 +80,11 @@
             // btnAdicionar
             // 
             btnAdicionar.BackColor = Color.MediumTurquoise;
-            btnAdicionar.Location = new Point(126, 11);
+            btnAdicionar.Location = new Point(117, 11);
             btnAdicionar.Name = "btnAdicionar";
             btnAdicionar.Size = new Size(193, 34);
             btnAdicionar.TabIndex = 3;
-            btnAdicionar.Text = "New work Orde";
+            btnAdicionar.Text = "New work Order";
             btnAdicionar.UseVisualStyleBackColor = false;
             btnAdicionar.Click += btnAdicionar_Click;
             // 
@@ -96,9 +99,17 @@
             listaPecas.CellClick += listaPecas_CellContentClick;
             
             // 
+            button2.BackColor = Color.DodgerBlue;
+            button2.Location = new Point(945, 521);
+            button2.Name = "button2";
+            button2.Size = new Size(112, 34);
+            button2.TabIndex = 11;
+            button2.Text = "Finish";
+            button2.UseVisualStyleBackColor = false;
+            // 
             // textBox1
             // 
-            textBox1.Location = new Point(266, 35);
+            textBox1.Location = new Point(108, 23);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(699, 31);
             textBox1.TabIndex = 0;
@@ -108,7 +119,7 @@
             // 
             pesquisa.AutoSize = true;
             pesquisa.Font = new Font("Segoe UI", 12F);
-            pesquisa.Location = new Point(155, 35);
+            pesquisa.Location = new Point(12, 20);
             pesquisa.Name = "pesquisa";
             pesquisa.Size = new Size(90, 32);
             pesquisa.TabIndex = 1;
@@ -129,11 +140,11 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1104, 663);
             Controls.Add(Fechar);
             Controls.Add(button1);
             Controls.Add(textBox1);
-            Controls.Add(btnSalvar);
             Controls.Add(pesquisa);
             Controls.Add(gbCadastro);
             FormBorderStyle = FormBorderStyle.None;
@@ -148,6 +159,7 @@
 
         #endregion
         private Button button1;
+        private Button button2;
         private Button btnSalvar;
         private GroupBox gbCadastro;
         private Button btnAdicionar;

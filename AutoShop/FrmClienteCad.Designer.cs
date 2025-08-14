@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmClienteCad));
             panel1 = new Panel();
             label2 = new Label();
             Fechar = new Button();
@@ -44,19 +45,21 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.RoyalBlue;
+            panel1.BackColor = Color.LightSeaGreen;
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.Controls.Add(label2);
             panel1.Controls.Add(Fechar);
-            panel1.Location = new Point(12, 12);
+            panel1.Location = new Point(0, -1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1181, 112);
+            panel1.Size = new Size(1193, 136);
             panel1.TabIndex = 11;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F);
-            label2.Location = new Point(128, 27);
+            label2.Location = new Point(28, 27);
             label2.Name = "label2";
             label2.Size = new Size(292, 48);
             label2.TabIndex = 5;
@@ -65,10 +68,10 @@
             // 
             // Fechar
             // 
-            Fechar.BackColor = Color.Red;
-            Fechar.Location = new Point(1111, 27);
+            Fechar.BackColor = Color.IndianRed;
+            Fechar.Location = new Point(1132, 3);
             Fechar.Name = "Fechar";
-            Fechar.Size = new Size(38, 34);
+            Fechar.Size = new Size(58, 48);
             Fechar.TabIndex = 4;
             Fechar.Text = "X";
             Fechar.UseVisualStyleBackColor = false;
@@ -98,13 +101,15 @@
             // 
             // gbCadastro
             // 
+            gbCadastro.BackgroundImage = (Image)resources.GetObject("gbCadastro.BackgroundImage");
+            gbCadastro.BackgroundImageLayout = ImageLayout.Stretch;
             gbCadastro.Controls.Add(label1);
             gbCadastro.Controls.Add(pesquisa);
             gbCadastro.Controls.Add(txtPhone);
             gbCadastro.Controls.Add(txtNome);
-            gbCadastro.Location = new Point(25, 145);
+            gbCadastro.Location = new Point(0, 130);
             gbCadastro.Name = "gbCadastro";
-            gbCadastro.Size = new Size(1152, 490);
+            gbCadastro.Size = new Size(1193, 558);
             gbCadastro.TabIndex = 8;
             gbCadastro.TabStop = false;
             gbCadastro.Text = "gbCadastro";
@@ -112,8 +117,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = SystemColors.ActiveCaption;
             label1.Font = new Font("Segoe UI", 12F);
-            label1.Location = new Point(72, 300);
+            label1.Location = new Point(68, 300);
             label1.Name = "label1";
             label1.Size = new Size(87, 32);
             label1.TabIndex = 4;
@@ -122,6 +128,7 @@
             // pesquisa
             // 
             pesquisa.AutoSize = true;
+            pesquisa.BackColor = Color.PaleTurquoise;
             pesquisa.Font = new Font("Segoe UI", 12F);
             pesquisa.Location = new Point(72, 147);
             pesquisa.Name = "pesquisa";
@@ -131,7 +138,7 @@
             // 
             // txtPhone
             // 
-            txtPhone.Location = new Point(195, 303);
+            txtPhone.Location = new Point(174, 303);
             txtPhone.Name = "txtPhone";
             txtPhone.Size = new Size(349, 31);
             txtPhone.TabIndex = 1;
@@ -140,14 +147,14 @@
             // 
             txtNome.Location = new Point(195, 150);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(349, 31);
+            txtNome.Size = new Size(328, 31);
             txtNome.TabIndex = 0;
             // 
             // FrmClienteCad
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1205, 687);
+            ClientSize = new Size(1191, 687);
             Controls.Add(panel1);
             Controls.Add(button1);
             Controls.Add(btnSalvar);
