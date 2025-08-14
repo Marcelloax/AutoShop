@@ -157,6 +157,7 @@
 
         #endregion
         private Button button1;
+        private Button button2;
         private Button btnSalvar;
         private GroupBox gbCadastro;
         private Button btnAdicionar;

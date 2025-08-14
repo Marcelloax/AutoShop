@@ -93,5 +93,10 @@ namespace AutoShop
         {
 
         }
+
+        private void gbCadastro_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

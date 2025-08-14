@@ -44,6 +44,8 @@
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             pictureBox2 = new PictureBox();
+            button1 = new Button();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -197,6 +199,25 @@
             pictureBox2.TabIndex = 13;
             pictureBox2.TabStop = false;
             // 
+            // button1
+            // 
+            button1.Location = new Point(779, 9);
+            button1.Name = "button1";
+            button1.Size = new Size(112, 34);
+            button1.TabIndex = 26;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            
+            // 
+            // button5
+            // 
+            button5.Location = new Point(910, 12);
+            button5.Name = "button5";
+            button5.Size = new Size(112, 34);
+            button5.TabIndex = 27;
+            button5.Text = "button5";
+            button5.UseVisualStyleBackColor = true;           
+            // 
             // FrmHome
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -204,6 +225,8 @@
             BackColor = SystemColors.ActiveCaption;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1098, 618);
+            Controls.Add(button5);
+            Controls.Add(button1);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
@@ -221,7 +244,7 @@
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmHome";
-            Text = "FrmHome";
+            Text = "]";
             Load += FrmHome_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -246,5 +269,7 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private PictureBox pictureBox2;
+        private Button button1;
+        private Button button5;
     }
 }
