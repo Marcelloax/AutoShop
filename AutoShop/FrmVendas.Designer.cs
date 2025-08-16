@@ -44,7 +44,7 @@
             // button1
             // 
             button1.BackColor = Color.Brown;
-            button1.Location = new Point(791, 617);
+            button1.Location = new Point(669, 521);
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
             button1.TabIndex = 10;
@@ -67,7 +67,7 @@
             // 
             gbCadastro.BackgroundImage = (Image)resources.GetObject("gbCadastro.BackgroundImage");
             gbCadastro.Controls.Add(btnAdicionar);
-            gbCadastro.Controls.Add(button2);
+            gbCadastro.Controls.Add(button1);
             gbCadastro.Controls.Add(listaPecas);
             gbCadastro.Controls.Add(btnSalvar);
             gbCadastro.Location = new Point(2, 96);
@@ -97,15 +97,6 @@
             listaPecas.Size = new Size(973, 439);
             listaPecas.TabIndex = 0;
             listaPecas.CellClick += listaPecas_CellContentClick;
-            
-            // 
-            button2.BackColor = Color.DodgerBlue;
-            button2.Location = new Point(945, 521);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 34);
-            button2.TabIndex = 11;
-            button2.Text = "Finish";
-            button2.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -143,7 +134,6 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1104, 663);
             Controls.Add(Fechar);
-            Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(pesquisa);
             Controls.Add(gbCadastro);
