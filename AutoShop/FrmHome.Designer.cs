@@ -215,7 +215,7 @@
             button5.Size = new Size(112, 34);
             button5.TabIndex = 27;
             button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;           
+            button5.UseVisualStyleBackColor = true;
             // 
             // FrmHome
             // 
