@@ -94,7 +94,7 @@
             listaPecas.Location = new Point(27, 51);
             listaPecas.Name = "listaPecas";
             listaPecas.RowHeadersWidth = 62;
-            listaPecas.Size = new Size(973, 439);
+            listaPecas.Size = new Size(1026, 439);
             listaPecas.TabIndex = 0;
             listaPecas.CellClick += listaPecas_CellContentClick;
             // 

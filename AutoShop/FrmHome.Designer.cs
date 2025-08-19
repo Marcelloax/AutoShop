@@ -207,7 +207,6 @@
             button1.TabIndex = 26;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
-            
             // 
             // button5
             // 
