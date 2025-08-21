@@ -69,6 +69,8 @@
             // Fechar
             // 
             Fechar.BackColor = Color.IndianRed;
+            Fechar.FlatAppearance.MouseOverBackColor = Color.Silver;
+            Fechar.FlatStyle = FlatStyle.Flat;
             Fechar.Location = new Point(1132, 3);
             Fechar.Name = "Fechar";
             Fechar.Size = new Size(58, 48);
@@ -80,7 +82,9 @@
             // button1
             // 
             button1.BackColor = Color.Brown;
-            button1.Location = new Point(926, 641);
+            button1.FlatAppearance.MouseOverBackColor = Color.Silver;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(926, 500);
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
             button1.TabIndex = 10;
@@ -91,7 +95,9 @@
             // btnSalvar
             // 
             btnSalvar.BackColor = Color.SpringGreen;
-            btnSalvar.Location = new Point(1065, 641);
+            btnSalvar.FlatAppearance.MouseOverBackColor = Color.Silver;
+            btnSalvar.FlatStyle = FlatStyle.Flat;
+            btnSalvar.Location = new Point(1067, 500);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(112, 34);
             btnSalvar.TabIndex = 9;
@@ -104,7 +110,9 @@
             gbCadastro.BackgroundImage = (Image)resources.GetObject("gbCadastro.BackgroundImage");
             gbCadastro.BackgroundImageLayout = ImageLayout.Stretch;
             gbCadastro.Controls.Add(label1);
+            gbCadastro.Controls.Add(button1);
             gbCadastro.Controls.Add(pesquisa);
+            gbCadastro.Controls.Add(btnSalvar);
             gbCadastro.Controls.Add(txtPhone);
             gbCadastro.Controls.Add(txtNome);
             gbCadastro.Location = new Point(0, 130);
@@ -156,8 +164,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1191, 687);
             Controls.Add(panel1);
-            Controls.Add(button1);
-            Controls.Add(btnSalvar);
             Controls.Add(gbCadastro);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmClienteCad";

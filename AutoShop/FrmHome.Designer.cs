@@ -43,7 +43,7 @@
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             pictureBox2 = new PictureBox();
-            button1 = new Button();
+            Maximazin = new Button();
             button5 = new Button();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
@@ -100,6 +100,8 @@
             // btnworkorders
             // 
             btnworkorders.BackColor = SystemColors.GradientActiveCaption;
+            btnworkorders.FlatAppearance.MouseOverBackColor = Color.Silver;
+            btnworkorders.FlatStyle = FlatStyle.Flat;
             btnworkorders.Location = new Point(814, 232);
             btnworkorders.Name = "btnworkorders";
             btnworkorders.Size = new Size(209, 99);
@@ -121,6 +123,8 @@
             button2.BackColor = SystemColors.GradientActiveCaption;
             button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
             button2.BackgroundImageLayout = ImageLayout.Zoom;
+            button2.FlatAppearance.MouseOverBackColor = Color.Silver;
+            button2.FlatStyle = FlatStyle.Flat;
             button2.Location = new Point(1041, 1);
             button2.Name = "button2";
             button2.Size = new Size(62, 51);
@@ -131,6 +135,8 @@
             // button3
             // 
             button3.BackColor = SystemColors.GradientActiveCaption;
+            button3.FlatAppearance.MouseOverBackColor = Color.Silver;
+            button3.FlatStyle = FlatStyle.Flat;
             button3.Location = new Point(813, 354);
             button3.Name = "button3";
             button3.Size = new Size(209, 99);
@@ -142,6 +148,8 @@
             // btncostumers
             // 
             btncostumers.BackColor = SystemColors.GradientActiveCaption;
+            btncostumers.FlatAppearance.MouseOverBackColor = Color.Silver;
+            btncostumers.FlatStyle = FlatStyle.Flat;
             btncostumers.Location = new Point(813, 473);
             btncostumers.Name = "btncostumers";
             btncostumers.Size = new Size(209, 99);
@@ -162,7 +170,7 @@
             // textBox1
             // 
             textBox1.BackColor = SystemColors.InactiveCaption;
-            textBox1.Location = new Point(-1, 177);
+            textBox1.Location = new Point(0, 177);
             textBox1.Margin = new Padding(0);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(218, 31);
@@ -196,37 +204,33 @@
             pictureBox2.TabIndex = 13;
             pictureBox2.TabStop = false;
             // 
-            // button1
+            // Maximazin
             // 
-            button1.BackColor = SystemColors.GradientActiveCaption;
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.Location = new Point(973, 1);
-            button1.Name = "button1";
-            button1.Size = new Size(62, 51);
-            button1.TabIndex = 26;
-<<<<<<< HEAD
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-=======
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
->>>>>>> b3624f555cd4c8314cd898439f06047fe8647775
+            Maximazin.BackColor = SystemColors.GradientActiveCaption;
+            Maximazin.BackgroundImage = (Image)resources.GetObject("Maximazin.BackgroundImage");
+            Maximazin.BackgroundImageLayout = ImageLayout.Stretch;
+            Maximazin.FlatAppearance.MouseOverBackColor = Color.Silver;
+            Maximazin.FlatStyle = FlatStyle.Flat;
+            Maximazin.Location = new Point(973, 1);
+            Maximazin.Name = "Maximazin";
+            Maximazin.Size = new Size(62, 51);
+            Maximazin.TabIndex = 26;
+            Maximazin.UseVisualStyleBackColor = false;
+            Maximazin.Click += button1_Click;
             // 
             // button5
             // 
             button5.BackColor = SystemColors.GradientActiveCaption;
             button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
             button5.BackgroundImageLayout = ImageLayout.Stretch;
+            button5.FlatAppearance.MouseOverBackColor = Color.Silver;
+            button5.FlatStyle = FlatStyle.Flat;
             button5.Location = new Point(905, 1);
             button5.Name = "button5";
             button5.Size = new Size(62, 51);
             button5.TabIndex = 27;
-<<<<<<< HEAD
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
-=======
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // pictureBox4
             // 
@@ -257,7 +261,6 @@
             pictureBox6.Size = new Size(139, 128);
             pictureBox6.TabIndex = 31;
             pictureBox6.TabStop = false;
->>>>>>> b3624f555cd4c8314cd898439f06047fe8647775
             // 
             // FrmHome
             // 
@@ -270,7 +273,7 @@
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(button5);
-            Controls.Add(button1);
+            Controls.Add(Maximazin);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
@@ -314,7 +317,7 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private PictureBox pictureBox2;
-        private Button button1;
+        private Button Maximazin;
         private Button button5;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;

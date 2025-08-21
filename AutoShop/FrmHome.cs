@@ -75,7 +75,12 @@ namespace AutoShop
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
+        }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
         }
     }
 }

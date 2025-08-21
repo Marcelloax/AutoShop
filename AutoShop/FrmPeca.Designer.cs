@@ -46,6 +46,8 @@
             // btnSalvar
             // 
             btnSalvar.BackColor = Color.SpringGreen;
+            btnSalvar.FlatAppearance.MouseOverBackColor = Color.Silver;
+            btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Location = new Point(919, 617);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(112, 34);
@@ -57,6 +59,8 @@
             // button1
             // 
             button1.BackColor = Color.Brown;
+            button1.FlatAppearance.MouseOverBackColor = Color.Silver;
+            button1.FlatStyle = FlatStyle.Flat;
             button1.Location = new Point(790, 617);
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
@@ -80,6 +84,8 @@
             // Fechar
             // 
             Fechar.BackColor = Color.Red;
+            Fechar.FlatAppearance.MouseOverBackColor = Color.Silver;
+            Fechar.FlatStyle = FlatStyle.Flat;
             Fechar.Location = new Point(1045, 0);
             Fechar.Name = "Fechar";
             Fechar.Size = new Size(38, 34);
@@ -123,6 +129,8 @@
             // btnAdicionar
             // 
             btnAdicionar.BackColor = Color.SpringGreen;
+            btnAdicionar.FlatAppearance.MouseOverBackColor = Color.Silver;
+            btnAdicionar.FlatStyle = FlatStyle.Flat;
             btnAdicionar.Location = new Point(165, 11);
             btnAdicionar.Name = "btnAdicionar";
             btnAdicionar.Size = new Size(112, 34);
