@@ -15,12 +15,12 @@ namespace AutoShop
         public Login()
         {
             InitializeComponent();
-            
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            // Ensure the picture box stays behind other controls
+            pictureBox4.SendToBack();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -49,6 +49,12 @@ namespace AutoShop
         {
             Close();
             Application.Exit();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            // Optional: also allow sending to back when clicked
+            pictureBox4.SendToBack();
         }
     }
 }

@@ -36,12 +36,18 @@
             label2 = new Label();
             label3 = new Label();
             btnClose = new Button();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // txtusername
             // 
             txtusername.BackColor = SystemColors.InactiveCaption;
-            txtusername.Location = new Point(402, 199);
+            txtusername.Location = new Point(414, 191);
             txtusername.Margin = new Padding(0);
             txtusername.Name = "txtusername";
             txtusername.Size = new Size(218, 31);
@@ -58,18 +64,22 @@
             // LoginBtn
             // 
             LoginBtn.BackColor = SystemColors.GradientActiveCaption;
-            LoginBtn.Location = new Point(419, 400);
+            LoginBtn.BackgroundImageLayout = ImageLayout.Stretch;
+            LoginBtn.ForeColor = SystemColors.Highlight;
+            LoginBtn.Location = new Point(431, 376);
             LoginBtn.Name = "LoginBtn";
-            LoginBtn.Size = new Size(167, 51);
+            LoginBtn.Size = new Size(128, 51);
             LoginBtn.TabIndex = 2;
-            LoginBtn.Text = "Login";
+            LoginBtn.Text = "LOGIN";
             LoginBtn.UseVisualStyleBackColor = false;
             LoginBtn.Click += Btnlogin;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(479, 140);
+            label1.BackColor = Color.Transparent;
+            label1.ForeColor = SystemColors.ActiveCaption;
+            label1.Location = new Point(402, 157);
             label1.Name = "label1";
             label1.Size = new Size(54, 25);
             label1.TabIndex = 3;
@@ -78,8 +88,8 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = SystemColors.ActiveCaption;
-            label2.Location = new Point(465, 263);
+            label2.BackColor = Color.Transparent;
+            label2.Location = new Point(402, 270);
             label2.Name = "label2";
             label2.Size = new Size(87, 25);
             label2.TabIndex = 4;
@@ -87,8 +97,10 @@
             // 
             // label3
             // 
+            label3.BackColor = Color.Transparent;
             label3.FlatStyle = FlatStyle.Popup;
-            label3.Font = new Font("Segoe Script", 10F);
+            label3.Font = new Font("Tempus Sans ITC", 20F);
+            label3.ForeColor = Color.GhostWhite;
             label3.Location = new Point(-2, -7);
             label3.Name = "label3";
             label3.Size = new Size(992, 70);
@@ -108,12 +120,49 @@
             btnClose.UseVisualStyleBackColor = false;
             btnClose.Click += BtnClose;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(316, 171);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(59, 51);
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox2.Location = new Point(316, 291);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(59, 62);
+            pictureBox2.TabIndex = 8;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackgroundImageLayout = ImageLayout.None;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(248, 157);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(501, 283);
+            pictureBox4.TabIndex = 10;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = SystemColors.ActiveCaptionText;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(988, 551);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(btnClose);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -121,10 +170,14 @@
             Controls.Add(LoginBtn);
             Controls.Add(txtpassword);
             Controls.Add(txtusername);
+            ForeColor = SystemColors.ActiveCaption;
             FormBorderStyle = FormBorderStyle.None;
             Name = "Login";
             Text = "Login";
             Load += Login_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -138,5 +191,8 @@
         private Label label2;
         private Label label3;
         private Button btnClose;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox4;
     }
 }

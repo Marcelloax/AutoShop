@@ -39,6 +39,8 @@
             pesquisa = new Label();
             txtPhone = new TextBox();
             txtNome = new TextBox();
+            button5 = new Button();
+            button2 = new Button();
             panel1.SuspendLayout();
             gbCadastro.SuspendLayout();
             SuspendLayout();
@@ -48,6 +50,8 @@
             panel1.BackColor = Color.LightSeaGreen;
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(button5);
+            panel1.Controls.Add(button2);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(Fechar);
             panel1.Location = new Point(0, -1);
@@ -68,12 +72,13 @@
             // 
             // Fechar
             // 
-            Fechar.BackColor = Color.IndianRed;
+            Fechar.BackColor = SystemColors.GradientActiveCaption;
+            Fechar.BackgroundImage = (Image)resources.GetObject("Fechar.BackgroundImage");
+            Fechar.BackgroundImageLayout = ImageLayout.Zoom;
             Fechar.Location = new Point(1132, 3);
             Fechar.Name = "Fechar";
-            Fechar.Size = new Size(58, 48);
+            Fechar.Size = new Size(62, 51);
             Fechar.TabIndex = 4;
-            Fechar.Text = "X";
             Fechar.UseVisualStyleBackColor = false;
             Fechar.Click += Fechar_Click;
             // 
@@ -150,6 +155,28 @@
             txtNome.Size = new Size(328, 31);
             txtNome.TabIndex = 0;
             // 
+            // button5
+            // 
+            button5.BackColor = SystemColors.GradientActiveCaption;
+            button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
+            button5.BackgroundImageLayout = ImageLayout.Stretch;
+            button5.Location = new Point(996, 3);
+            button5.Name = "button5";
+            button5.Size = new Size(62, 51);
+            button5.TabIndex = 29;
+            button5.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.GradientActiveCaption;
+            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
+            button2.Location = new Point(1064, 3);
+            button2.Name = "button2";
+            button2.Size = new Size(62, 51);
+            button2.TabIndex = 28;
+            button2.UseVisualStyleBackColor = false;
+            // 
             // FrmClienteCad
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -181,5 +208,7 @@
         private TextBox txtPhone;
         private TextBox txtNome;
         private Label label2;
+        private Button button5;
+        private Button button2;
     }
 }
