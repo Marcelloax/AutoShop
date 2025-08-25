@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace AutoShop
 {
-    public partial class Login : Form
+    public partial class Logins : Form
     {
-        public Login()
+        public Logins()
         {
             InitializeComponent();
-
+            
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -49,16 +49,6 @@ namespace AutoShop
         {
             Close();
             Application.Exit();
-        }
-
-        private void max_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-        }
-
-        private void min_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
         }
     }
 }
