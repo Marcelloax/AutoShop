@@ -49,8 +49,9 @@
             panel1.Controls.Add(pesquisa);
             panel1.Controls.Add(textBox1);
             panel1.Location = new Point(-1, 0);
+            panel1.Margin = new Padding(2, 2, 2, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1105, 74);
+            panel1.Size = new Size(774, 44);
             panel1.TabIndex = 7;
             // 
             // Fechar
@@ -58,9 +59,10 @@
             Fechar.BackColor = Color.DarkRed;
             Fechar.FlatAppearance.MouseOverBackColor = Color.Silver;
             Fechar.FlatStyle = FlatStyle.Flat;
-            Fechar.Location = new Point(1022, 16);
+            Fechar.Location = new Point(715, 10);
+            Fechar.Margin = new Padding(2, 2, 2, 2);
             Fechar.Name = "Fechar";
-            Fechar.Size = new Size(71, 34);
+            Fechar.Size = new Size(50, 26);
             Fechar.TabIndex = 4;
             Fechar.Text = "X";
             Fechar.UseVisualStyleBackColor = false;
@@ -70,17 +72,19 @@
             // 
             pesquisa.AutoSize = true;
             pesquisa.Font = new Font("Vladimir Script", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            pesquisa.Location = new Point(56, 9);
+            pesquisa.Location = new Point(39, 5);
+            pesquisa.Margin = new Padding(2, 0, 2, 0);
             pesquisa.Name = "pesquisa";
-            pesquisa.Size = new Size(118, 48);
+            pesquisa.Size = new Size(81, 32);
             pesquisa.TabIndex = 1;
             pesquisa.Text = "Search:";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(206, 21);
+            textBox1.Location = new Point(144, 13);
+            textBox1.Margin = new Padding(2, 2, 2, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(722, 31);
+            textBox1.Size = new Size(507, 23);
             textBox1.TabIndex = 0;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
@@ -89,9 +93,10 @@
             button1.BackColor = Color.Brown;
             button1.FlatAppearance.MouseOverBackColor = Color.Silver;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(795, 608);
+            button1.Location = new Point(556, 374);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(112, 34);
+            button1.Size = new Size(78, 22);
             button1.TabIndex = 6;
             button1.Text = "Delete";
             button1.UseVisualStyleBackColor = false;
@@ -102,9 +107,10 @@
             btnSalvar.BackColor = Color.SpringGreen;
             btnSalvar.FlatAppearance.MouseOverBackColor = SystemColors.AppWorkspace;
             btnSalvar.FlatStyle = FlatStyle.Flat;
-            btnSalvar.Location = new Point(924, 608);
+            btnSalvar.Location = new Point(641, 374);
+            btnSalvar.Margin = new Padding(2, 2, 2, 2);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(112, 34);
+            btnSalvar.Size = new Size(78, 22);
             btnSalvar.TabIndex = 5;
             btnSalvar.Text = "Edit";
             btnSalvar.UseVisualStyleBackColor = false;
@@ -115,9 +121,11 @@
             gbCadastro.BackColor = SystemColors.ActiveCaption;
             gbCadastro.Controls.Add(btnAdicionar);
             gbCadastro.Controls.Add(listaPecas);
-            gbCadastro.Location = new Point(19, 85);
+            gbCadastro.Location = new Point(13, 51);
+            gbCadastro.Margin = new Padding(2, 2, 2, 2);
             gbCadastro.Name = "gbCadastro";
-            gbCadastro.Size = new Size(1073, 517);
+            gbCadastro.Padding = new Padding(2, 2, 2, 2);
+            gbCadastro.Size = new Size(751, 319);
             gbCadastro.TabIndex = 4;
             gbCadastro.TabStop = false;
             gbCadastro.Text = "Customer";
@@ -128,9 +136,10 @@
             btnAdicionar.BackColor = Color.SpringGreen;
             btnAdicionar.FlatAppearance.MouseOverBackColor = Color.Silver;
             btnAdicionar.FlatStyle = FlatStyle.Flat;
-            btnAdicionar.Location = new Point(86, 22);
+            btnAdicionar.Location = new Point(60, 13);
+            btnAdicionar.Margin = new Padding(2, 2, 2, 2);
             btnAdicionar.Name = "btnAdicionar";
-            btnAdicionar.Size = new Size(192, 34);
+            btnAdicionar.Size = new Size(134, 32);
             btnAdicionar.TabIndex = 3;
             btnAdicionar.Text = "Add New Customer";
             btnAdicionar.UseVisualStyleBackColor = false;
@@ -140,24 +149,26 @@
             // 
             listaPecas.BackgroundColor = SystemColors.GradientInactiveCaption;
             listaPecas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            listaPecas.Location = new Point(27, 62);
+            listaPecas.Location = new Point(25, 49);
+            listaPecas.Margin = new Padding(2, 2, 2, 2);
             listaPecas.Name = "listaPecas";
             listaPecas.RowHeadersWidth = 62;
-            listaPecas.Size = new Size(973, 428);
+            listaPecas.Size = new Size(681, 257);
             listaPecas.TabIndex = 0;
             listaPecas.CellClick += listaPecas_CellClick;
             // 
             // FrmCliente
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.InactiveCaption;
-            ClientSize = new Size(1104, 663);
+            ClientSize = new Size(773, 407);
             Controls.Add(panel1);
             Controls.Add(button1);
             Controls.Add(btnSalvar);
             Controls.Add(gbCadastro);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2, 2, 2, 2);
             Name = "FrmCliente";
             Text = "FrmCliente";
             Load += FrmCliente_Load;

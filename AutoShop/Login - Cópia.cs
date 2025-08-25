@@ -10,21 +10,17 @@ using System.Windows.Forms;
 
 namespace AutoShop
 {
-    public partial class Login : Form
+    public partial class Logins : Form
     {
-        public Login()
+        public Logins()
         {
             InitializeComponent();
-<<<<<<< HEAD
-=======
-
->>>>>>> b092a0cd944b91bd44a9bd8af41a30790f27e200
+            
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
-            // Ensure the picture box stays behind other controls
-            pictureBox4.SendToBack();
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -53,23 +49,6 @@ namespace AutoShop
         {
             Close();
             Application.Exit();
-        }
-
-<<<<<<< HEAD
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            // Optional: also allow sending to back when clicked
-            pictureBox4.SendToBack();
-=======
-        private void max_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-        }
-
-        private void min_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
->>>>>>> b092a0cd944b91bd44a9bd8af41a30790f27e200
         }
     }
 }
