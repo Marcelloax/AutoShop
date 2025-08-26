@@ -117,7 +117,7 @@
             // 
             // listaPecas
             // 
-            listaPecas.BackgroundColor = SystemColors.ButtonShadow;
+            listaPecas.BackgroundColor = SystemColors.GradientInactiveCaption;
             listaPecas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             listaPecas.Location = new Point(46, 51);
             listaPecas.Name = "listaPecas";
