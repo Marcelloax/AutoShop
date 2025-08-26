@@ -83,5 +83,10 @@ namespace AutoShop
         {
             BuscarPeca();
         }
+
+        private void Pecas_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

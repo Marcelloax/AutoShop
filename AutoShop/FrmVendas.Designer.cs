@@ -70,6 +70,7 @@
             // gbCadastro
             // 
             gbCadastro.BackgroundImage = (Image)resources.GetObject("gbCadastro.BackgroundImage");
+            gbCadastro.BackgroundImageLayout = ImageLayout.None;
             gbCadastro.Controls.Add(btnAdicionar);
             gbCadastro.Controls.Add(button1);
             gbCadastro.Controls.Add(listaPecas);
@@ -96,7 +97,6 @@
             // 
             // listaPecas
             // 
-            listaPecas.BackgroundColor = SystemColors.GradientInactiveCaption;
             listaPecas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             listaPecas.Location = new Point(27, 51);
             listaPecas.Name = "listaPecas";

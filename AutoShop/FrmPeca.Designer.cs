@@ -117,7 +117,7 @@
             // 
             // listaPecas
             // 
-            listaPecas.BackgroundColor = SystemColors.GradientInactiveCaption;
+            listaPecas.BackgroundColor = SystemColors.ButtonShadow;
             listaPecas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             listaPecas.Location = new Point(46, 51);
             listaPecas.Name = "listaPecas";
@@ -150,6 +150,7 @@
             Pecas.TabIndex = 0;
             Pecas.TabStop = false;
             Pecas.Text = "Pecas";
+            Pecas.Enter += Pecas_Enter;
             // 
             // FrmPeca
             // 
