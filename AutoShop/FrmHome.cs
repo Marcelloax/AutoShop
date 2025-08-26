@@ -12,7 +12,7 @@ namespace AutoShop
 {
     public partial class FrmHome : Form
     {
-        public FrmHome(string nome, string senha)
+        public FrmHome (string nome, string senha)
         {
             InitializeComponent();
             label1.Text = $"Bem-vindo, {nome}!";

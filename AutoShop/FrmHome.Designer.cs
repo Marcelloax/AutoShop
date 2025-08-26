@@ -29,52 +29,39 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
-            label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
             btnworkorders = new Button();
-            textBox5 = new TextBox();
             button2 = new Button();
             button3 = new Button();
             btncostumers = new Button();
-            textBox6 = new TextBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            pictureBox2 = new PictureBox();
             Maximazin = new Button();
             button5 = new Button();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            label3 = new Label();
             pictureBox6 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            pictureBox5 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            tableLayoutPanel3 = new TableLayoutPanel();
+            tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            tableLayoutPanel3.SuspendLayout();
             SuspendLayout();
-            // 
-            // label3
-            // 
-            label3.Font = new Font("Segoe Script", 15F);
-            label3.Location = new Point(342, 80);
-            label3.Name = "label3";
-            label3.Size = new Size(428, 96);
-            label3.TabIndex = 11;
-            label3.Text = "Automotive Excellence";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = SystemColors.ActiveCaption;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Vivaldi", 30F);
-            label2.Location = new Point(342, 9);
+            label2.ForeColor = SystemColors.ButtonFace;
+            label2.Location = new Point(3, 0);
             label2.Name = "label2";
             label2.Size = new Size(437, 71);
             label2.TabIndex = 10;
             label2.Text = "The Missing Part";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             label2.Click += label2_Click;
             // 
             // label1
@@ -86,37 +73,18 @@
             label1.TabIndex = 9;
             label1.Click += label1_Click;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(-1, 1);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(337, 176);
-            pictureBox1.TabIndex = 12;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
             // btnworkorders
             // 
             btnworkorders.BackColor = SystemColors.GradientActiveCaption;
             btnworkorders.FlatAppearance.MouseOverBackColor = Color.Silver;
             btnworkorders.FlatStyle = FlatStyle.Flat;
-            btnworkorders.Location = new Point(814, 232);
+            btnworkorders.Location = new Point(894, 3);
             btnworkorders.Name = "btnworkorders";
-            btnworkorders.Size = new Size(209, 99);
+            btnworkorders.Size = new Size(201, 107);
             btnworkorders.TabIndex = 14;
             btnworkorders.Text = "Work Orders";
             btnworkorders.UseVisualStyleBackColor = false;
             btnworkorders.Click += Btnworkorder;
-            // 
-            // textBox5
-            // 
-            textBox5.BackColor = SystemColors.InactiveCaption;
-            textBox5.Location = new Point(878, 177);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(218, 31);
-            textBox5.TabIndex = 17;
             // 
             // button2
             // 
@@ -125,9 +93,9 @@
             button2.BackgroundImageLayout = ImageLayout.Zoom;
             button2.FlatAppearance.MouseOverBackColor = Color.Silver;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(1041, 1);
+            button2.Location = new Point(1035, 3);
             button2.Name = "button2";
-            button2.Size = new Size(62, 51);
+            button2.Size = new Size(60, 51);
             button2.TabIndex = 18;
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
@@ -137,9 +105,9 @@
             button3.BackColor = SystemColors.GradientActiveCaption;
             button3.FlatAppearance.MouseOverBackColor = Color.Silver;
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(813, 354);
+            button3.Location = new Point(894, 135);
             button3.Name = "button3";
-            button3.Size = new Size(209, 99);
+            button3.Size = new Size(201, 105);
             button3.TabIndex = 19;
             button3.Text = "Inventory";
             button3.UseVisualStyleBackColor = false;
@@ -150,59 +118,13 @@
             btncostumers.BackColor = SystemColors.GradientActiveCaption;
             btncostumers.FlatAppearance.MouseOverBackColor = Color.Silver;
             btncostumers.FlatStyle = FlatStyle.Flat;
-            btncostumers.Location = new Point(813, 473);
+            btncostumers.Location = new Point(894, 259);
             btncostumers.Name = "btncostumers";
-            btncostumers.Size = new Size(209, 99);
+            btncostumers.Size = new Size(201, 99);
             btncostumers.TabIndex = 21;
             btncostumers.Text = "Customers";
             btncostumers.UseVisualStyleBackColor = false;
             btncostumers.Click += Btncustomers;
-            // 
-            // textBox6
-            // 
-            textBox6.BackColor = SystemColors.InactiveCaption;
-            textBox6.Location = new Point(218, 177);
-            textBox6.Margin = new Padding(0);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(218, 31);
-            textBox6.TabIndex = 22;
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = SystemColors.InactiveCaption;
-            textBox1.Location = new Point(0, 177);
-            textBox1.Margin = new Padding(0);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(218, 31);
-            textBox1.TabIndex = 23;
-            // 
-            // textBox2
-            // 
-            textBox2.BackColor = SystemColors.InactiveCaption;
-            textBox2.Location = new Point(436, 177);
-            textBox2.Margin = new Padding(0);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(218, 31);
-            textBox2.TabIndex = 24;
-            // 
-            // textBox3
-            // 
-            textBox3.BackColor = SystemColors.InactiveCaption;
-            textBox3.Location = new Point(657, 177);
-            textBox3.Margin = new Padding(0);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(218, 31);
-            textBox3.TabIndex = 25;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(-1, 206);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(609, 413);
-            pictureBox2.TabIndex = 13;
-            pictureBox2.TabStop = false;
             // 
             // Maximazin
             // 
@@ -211,9 +133,9 @@
             Maximazin.BackgroundImageLayout = ImageLayout.Stretch;
             Maximazin.FlatAppearance.MouseOverBackColor = Color.Silver;
             Maximazin.FlatStyle = FlatStyle.Flat;
-            Maximazin.Location = new Point(973, 1);
+            Maximazin.Location = new Point(971, 3);
             Maximazin.Name = "Maximazin";
-            Maximazin.Size = new Size(62, 51);
+            Maximazin.Size = new Size(58, 51);
             Maximazin.TabIndex = 26;
             Maximazin.UseVisualStyleBackColor = false;
             Maximazin.Click += button1_Click;
@@ -225,102 +147,141 @@
             button5.BackgroundImageLayout = ImageLayout.Stretch;
             button5.FlatAppearance.MouseOverBackColor = Color.Silver;
             button5.FlatStyle = FlatStyle.Flat;
-            button5.Location = new Point(905, 1);
+            button5.Location = new Point(907, 3);
             button5.Name = "button5";
-            button5.Size = new Size(62, 51);
+            button5.Size = new Size(58, 51);
             button5.TabIndex = 27;
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
             // 
-            // pictureBox4
+            // tableLayoutPanel1
             // 
-            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
-            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(631, 339);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(136, 114);
-            pictureBox4.TabIndex = 29;
-            pictureBox4.TabStop = false;
+            tableLayoutPanel1.BackColor = Color.Transparent;
+            tableLayoutPanel1.ColumnCount = 4;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 64F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 64F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 66F));
+            tableLayoutPanel1.Controls.Add(button2, 3, 0);
+            tableLayoutPanel1.Controls.Add(button5, 1, 0);
+            tableLayoutPanel1.Controls.Add(Maximazin, 2, 0);
+            tableLayoutPanel1.Controls.Add(label3, 0, 1);
+            tableLayoutPanel1.Controls.Add(label2, 0, 0);
+            tableLayoutPanel1.Dock = DockStyle.Top;
+            tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 2;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 85F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.Size = new Size(1098, 160);
+            tableLayoutPanel1.TabIndex = 28;
             // 
-            // pictureBox5
+            // label3
             // 
-            pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
-            pictureBox5.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox5.Location = new Point(631, 218);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(136, 114);
-            pictureBox5.TabIndex = 30;
-            pictureBox5.TabStop = false;
+            label3.Font = new Font("Segoe Script", 15F);
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(3, 75);
+            label3.Name = "label3";
+            label3.Size = new Size(898, 85);
+            label3.TabIndex = 36;
+            label3.Text = "Automotive Excellence";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox6
             // 
             pictureBox6.BackgroundImage = (Image)resources.GetObject("pictureBox6.BackgroundImage");
             pictureBox6.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox6.Location = new Point(631, 459);
+            pictureBox6.Location = new Point(3, 259);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(139, 128);
-            pictureBox6.TabIndex = 31;
+            pictureBox6.Size = new Size(136, 103);
+            pictureBox6.TabIndex = 34;
             pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
+            pictureBox5.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox5.Location = new Point(3, 3);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(136, 99);
+            pictureBox5.TabIndex = 33;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
+            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox4.Location = new Point(3, 135);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(136, 99);
+            pictureBox4.TabIndex = 32;
+            pictureBox4.TabStop = false;
+            // 
+            // tableLayoutPanel3
+            // 
+            tableLayoutPanel3.BackColor = Color.Transparent;
+            tableLayoutPanel3.ColumnCount = 2;
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 207F));
+            tableLayoutPanel3.Controls.Add(btncostumers, 1, 2);
+            tableLayoutPanel3.Controls.Add(pictureBox4, 0, 1);
+            tableLayoutPanel3.Controls.Add(button3, 1, 1);
+            tableLayoutPanel3.Controls.Add(pictureBox6, 0, 2);
+            tableLayoutPanel3.Controls.Add(btnworkorders, 1, 0);
+            tableLayoutPanel3.Controls.Add(pictureBox5, 0, 0);
+            tableLayoutPanel3.Dock = DockStyle.Bottom;
+            tableLayoutPanel3.Location = new Point(0, 253);
+            tableLayoutPanel3.Name = "tableLayoutPanel3";
+            tableLayoutPanel3.RowCount = 3;
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 124F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 109F));
+            tableLayoutPanel3.Size = new Size(1098, 365);
+            tableLayoutPanel3.TabIndex = 35;
             // 
             // FrmHome
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1098, 618);
-            Controls.Add(pictureBox6);
-            Controls.Add(pictureBox5);
-            Controls.Add(pictureBox4);
-            Controls.Add(button5);
-            Controls.Add(Maximazin);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(textBox6);
-            Controls.Add(btncostumers);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(textBox5);
-            Controls.Add(btnworkorders);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(tableLayoutPanel3);
+            Controls.Add(tableLayoutPanel1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmHome";
             Text = "]";
+            WindowState = FormWindowState.Maximized;
+            MaximizedBoundsChanged += FrmHome_Load;
+            MaximumSizeChanged += FrmHome_Load;
             Load += FrmHome_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            tableLayoutPanel3.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label3;
         private Label label2;
         private Label label1;
-        private PictureBox pictureBox1;
         private Button btnworkorders;
-        private TextBox textBox5;
         private Button button2;
         private Button button3;
         private Button btncostumers;
-        private TextBox textBox6;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private PictureBox pictureBox2;
         private Button Maximazin;
         private Button button5;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
+        private TableLayoutPanel tableLayoutPanel1;
         private PictureBox pictureBox6;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox4;
+        private TableLayoutPanel tableLayoutPanel3;
+        private Label label3;
     }
 }
