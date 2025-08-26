@@ -36,18 +36,28 @@
             label2 = new Label();
             label3 = new Label();
             btnClose = new Button();
+<<<<<<< HEAD
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+=======
             max = new Button();
             min = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel2 = new TableLayoutPanel();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
+>>>>>>> b092a0cd944b91bd44a9bd8af41a30790f27e200
             SuspendLayout();
             // 
             // txtusername
             // 
             txtusername.BackColor = SystemColors.InactiveCaption;
             txtusername.Location = new Point(0, 32);
+>>>>>>> b092a0cd944b91bd44a9bd8af41a30790f27e200
             txtusername.Margin = new Padding(0);
             txtusername.Name = "txtusername";
             txtusername.Size = new Size(218, 31);
@@ -68,7 +78,7 @@
             LoginBtn.Name = "LoginBtn";
             LoginBtn.Size = new Size(218, 48);
             LoginBtn.TabIndex = 2;
-            LoginBtn.Text = "Login";
+            LoginBtn.Text = "LOGIN";
             LoginBtn.UseVisualStyleBackColor = false;
             LoginBtn.Click += Btnlogin;
             // 
@@ -95,7 +105,13 @@
             // 
             // label3
             // 
+            label3.BackColor = Color.Transparent;
             label3.FlatStyle = FlatStyle.Popup;
+<<<<<<< HEAD
+            label3.Font = new Font("Tempus Sans ITC", 20F);
+            label3.ForeColor = Color.GhostWhite;
+            label3.Location = new Point(-2, -7);
+=======
             label3.Font = new Font("Segoe Script", 10F);
             label3.Location = new Point(3, 0);
             label3.Name = "label3";
@@ -116,6 +132,40 @@
             btnClose.UseVisualStyleBackColor = false;
             btnClose.Click += BtnClose;
             // 
+<<<<<<< HEAD
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(316, 171);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(59, 51);
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox2.Location = new Point(316, 291);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(59, 62);
+            pictureBox2.TabIndex = 8;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackgroundImageLayout = ImageLayout.None;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(248, 157);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(501, 283);
+            pictureBox4.TabIndex = 10;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
+=======
             // max
             // 
             max.BackColor = SystemColors.GradientActiveCaption;
@@ -184,24 +234,48 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 55F));
             tableLayoutPanel2.Size = new Size(224, 200);
             tableLayoutPanel2.TabIndex = 10;
+>>>>>>> b092a0cd944b91bd44a9bd8af41a30790f27e200
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD
+            BackColor = SystemColors.ActiveCaptionText;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(988, 551);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
+            Controls.Add(btnClose);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(LoginBtn);
+            Controls.Add(txtpassword);
+            Controls.Add(txtusername);
+            ForeColor = SystemColors.ActiveCaption;
+=======
             BackColor = Color.SkyBlue;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(989, 552);
             Controls.Add(tableLayoutPanel2);
             Controls.Add(tableLayoutPanel1);
+>>>>>>> b092a0cd944b91bd44a9bd8af41a30790f27e200
             FormBorderStyle = FormBorderStyle.None;
             Name = "Login";
             Text = "Login";
             Load += Login_Load;
+<<<<<<< HEAD
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+=======
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
+>>>>>>> b092a0cd944b91bd44a9bd8af41a30790f27e200
             ResumeLayout(false);
         }
 
@@ -214,9 +288,15 @@
         private Label label2;
         private Label label3;
         private Button btnClose;
+<<<<<<< HEAD
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox4;
+=======
         private Button max;
         private Button min;
         private TableLayoutPanel tableLayoutPanel1;
         private TableLayoutPanel tableLayoutPanel2;
+>>>>>>> b092a0cd944b91bd44a9bd8af41a30790f27e200
     }
 }
