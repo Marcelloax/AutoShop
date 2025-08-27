@@ -21,7 +21,7 @@ namespace AutoShop
         private void Login_Load(object sender, EventArgs e)
         {
             // Ensure the picture box stays behind other controls
-            pictureBox4.SendToBack();
+            //pictureBox4.SendToBack();
         }
 
         private void label3_Click(object sender, EventArgs e)

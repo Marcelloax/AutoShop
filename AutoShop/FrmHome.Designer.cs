@@ -228,8 +228,8 @@
             tableLayoutPanel3.Controls.Add(pictureBox4, 0, 1);
             tableLayoutPanel3.Controls.Add(button3, 1, 1);
             tableLayoutPanel3.Controls.Add(pictureBox6, 0, 2);
-            tableLayoutPanel3.Controls.Add(btnworkorders, 1, 0);
             tableLayoutPanel3.Controls.Add(pictureBox5, 0, 0);
+            tableLayoutPanel3.Controls.Add(btnworkorders, 1, 0);
             tableLayoutPanel3.Dock = DockStyle.Bottom;
             tableLayoutPanel3.Location = new Point(0, 253);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
