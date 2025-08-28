@@ -112,6 +112,7 @@
             txtquant.Name = "txtquant";
             txtquant.Size = new Size(226, 31);
             txtquant.TabIndex = 5;
+            txtquant.TextChanged += txtquant_TextChanged;
             // 
             // label3
             // 

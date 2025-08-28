@@ -114,6 +114,21 @@ namespace AutoShop
                     Quantidade = int.Parse(Quantidade)
                 };
                 bd.Vendas.Add(venda);
+
+                var peca = bd.Pecas.FirstOrDefault(p => p.Id == venda.PecaId);
+                if (peca != null)
+                {
+                    if (peca.Stock >= venda.Quantidade)
+                    {
+                        peca.Stock -= venda.Quantidade;
+                        bd.Pecas.Update(peca);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Estoque insuficiente para a peça selecionada.");
+                        return;
+                    }
+                }
                 bd.SaveChanges();
             }
             MessageBox.Show("Venda inserida com sucesso!");
@@ -134,6 +149,11 @@ namespace AutoShop
             }
             MessageBox.Show("Venda atualizada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
+        }
+
+        private void txtquant_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
